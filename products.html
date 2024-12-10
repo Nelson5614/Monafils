@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Products | Monafils Institute for Chess Excellence</title>
+    <meta name="description" content="Shop premium chess equipment at Monafils Institute. We offer professional chess sets, clocks, demonstration boards, and medals for chess enthusiasts in Lesotho.">
+    <meta name="keywords" content="chess equipment, chess sets, chess clocks, demonstration boards, chess medals, Lesotho chess supplies">
+    <link href="./dist/output.css" rel="stylesheet">
+
+    <style>
+        /* Custom styles for mobile menu */
+        .mobile-menu {
+            display: none;
+        }
+        .mobile-menu.open {
+            display: block;
+        }
+    </style>
+</head>
+<body class="bg-black text-white">
+    <!-- Header -->
+  
+    <header class="bg-white text-black py-4">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+            <!-- Logo -->
+            <div class="flex items-center space-x-2">
+                <img src="images/logo.png" alt="Monafils Institute Logo" class="w-20 h-20">
+                <span class="text-2xl font-bold text-primary">Monafils Institute</span>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex space-x-8">
+                <a href="index.html" class="text-sm hover:text-secondary transition-colors">Home</a>
+                <a href="about.html" class="text-sm hover:text-secondary transition-colors">About Us</a>
+                <a href="products.html" class="text-sm hover:text-secondary transition-colors">Products</a>
+                <a href="contact.html" class="text-sm hover:text-secondary transition-colors">Contact</a>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden text-black text-2xl" onclick="toggleMobileMenu()">
+                ☰
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="mobile-menu bg-white text-black md:hidden">
+            <nav class="flex flex-col space-y-4 p-4">
+                <a href="index.html" class="text-sm hover:text-secondary transition-colors">Home</a>
+                <a href="about.html" class="text-sm hover:text-secondary transition-colors">About Us</a>
+                <a href="products.html" class="text-sm hover:text-secondary transition-colors">Products</a>
+                <a href="contact.html" class="text-sm hover:text-secondary transition-colors">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="relative py-24 bg-black overflow-hidden">
+            <!-- Background Pattern -->
+            <div class="absolute inset-0 bg-grid-white/[0.02] bg-[size:60px_60px]"></div>
+            
+            <!-- Background Image with Overlay -->
+            <div class="absolute inset-0">
+                <img
+                    src="https://images.unsplash.com/photo-1586165368502-1bad197a6461?auto=format&fit=crop&q=80"
+                    alt="Chess equipment background"
+                    class="w-full h-full object-cover opacity-30"
+                />
+                <div class="absolute inset-0 bg-gradient-to-b from-black via-black/80 to-black"></div>
+            </div>
+
+            <!-- Hero Content -->
+            <div class="relative container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-3xl mx-auto text-center">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+                        Premium Chess <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Equipment</span>
+                    </h1>
+                    <p class="text-xl text-gray-400">
+                        Elevate your game with professional-grade chess equipment. 
+                        Quality tools for serious players.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Grid Section -->
+        <section class="py-24 bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-12">
+                    <!-- Chess Set -->
+                    <div class="group relative overflow-hidden rounded-2xl bg-black">
+                        <img
+                            src="https://images.unsplash.com/photo-1586166472720-56ea2fb40b47?auto=format&fit=crop&w=800&q=80"
+                            alt="Professional Chess Set"
+                            class="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
+                        />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6">
+                            <h3 class="text-2xl font-bold text-white mb-2">Professional Chess Set</h3>
+                            <p class="text-gray-300 mb-4">Tournament-grade chess set with weighted pieces and premium board.</p>
+                            <p class="text-2xl font-bold text-primary">M250.00</p>
+                        </div>
+                    </div>
+
+                    <!-- Chess Clock -->
+                    <div class="group relative overflow-hidden rounded-2xl bg-black">
+                        <img
+                            src="https://images.unsplash.com/photo-1612105527849-91bfb6150d03?auto=format&fit=crop&w=800&q=80"
+                            alt="Digital Chess Clock"
+                            class="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
+                        />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6">
+                            <h3 class="text-2xl font-bold text-white mb-2">Digital Chess Clock</h3>
+                            <p class="text-gray-300 mb-4">Professional digital chess clock with multiple time control options.</p>
+                            <p class="text-2xl font-bold text-primary">M500.00</p>
+                        </div>
+                    </div>
+
+                    <!-- Demonstration Board -->
+                    <div class="group relative overflow-hidden rounded-2xl bg-black">
+                        <img
+                            src="https://m.media-amazon.com/images/I/71jy3RnqFhL._AC_SL1500_.jpg"
+                            alt="Magnetic Demonstration Board"
+                            class="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
+                        />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6">
+                            <h3 class="text-2xl font-bold text-white mb-2">Magnetic Demonstration Board</h3>
+                            <p class="text-gray-300 mb-4">Large magnetic chess board perfect for teaching and analysis.</p>
+                            <p class="text-2xl font-bold text-primary">M500.00</p>
+                        </div>
+                    </div>
+
+                    <!-- Chess Medals -->
+                    <div class="group relative overflow-hidden rounded-2xl bg-black">
+                        <img
+                            src="https://m.media-amazon.com/images/I/81dAWVQyg7L._AC_SL1500_.jpg"
+                            alt="Chess Tournament Medals"
+                            class="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
+                        />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6">
+                            <h3 class="text-2xl font-bold text-white mb-2">Tournament Medals</h3>
+                            <p class="text-gray-300 mb-4">High-quality chess medals for tournament winners.</p>
+                            <p class="text-2xl font-bold text-primary">M25.00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="relative py-24 bg-black text-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-3xl mx-auto text-center space-y-8">
+                    <h2 class="text-3xl font-bold">Ready to Purchase?</h2>
+                    <p class="text-gray-400">
+                        Visit our store in Maseru or contact us to place your order. We offer delivery within Lesotho.
+                    </p>
+                    <div class="flex flex-col sm:flex-row justify-center gap-4">
+                        <a 
+                            href="tel:+26657123456"
+                            class="inline-flex items-center justify-center px-8 py-4 bg-primary hover:bg-primary/90 text-white rounded-lg font-semibold transition-all"
+                        >
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                            </svg>
+                            Call to Order
+                        </a>
+                        <a 
+                            href="/contact"
+                            class="inline-flex items-center justify-center px-8 py-4 bg-secondary hover:bg-secondary/90 text-white rounded-lg font-semibold transition-all"
+                        >
+                            Contact Us
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-12 border-t border-gray-800">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col items-center space-y-8">
+                <!-- Logo -->
+                <div class="flex items-center gap-2">
+                    <span class="text-2xl font-bold text-primary">Monafils Institute</span>
+                    <svg class="w-6 h-6 text-secondary" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M19 5L5 19M5 5l14 14" stroke-width="2" stroke-linecap="round"/>
+                        <circle cx="12" cy="12" r="10" stroke-width="2"/>
+                    </svg>
+                </div>
+
+                <!-- Navigation Links -->
+                <nav class="flex flex-wrap justify-center gap-8">
+                    <a href="/about" class="text-sm hover:text-secondary transition-colors">
+                        About Us
+                    </a>
+                    <a href="/contact" class="text-sm hover:text-secondary transition-colors">
+                        Contact
+                    </a>
+                    <a href="/privacy" class="text-sm hover:text-secondary transition-colors">
+                        Privacy Policy
+                    </a>
+                    <a href="/terms" class="text-sm hover:text-secondary transition-colors">
+                        Terms & Conditions
+                    </a>
+                    <a href="/programs" class="text-sm hover:text-secondary transition-colors">
+                        Training Programs
+                    </a>
+                </nav>
+
+                <!-- Social Media Links -->
+                <div class="flex space-x-6">
+                    <a 
+                        href="https://facebook.com/MonafilsChess" 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        class="text-gray-400 hover:text-secondary transition-colors"
+                    >
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
+                        </svg>
+                    </a>
+                    <a 
+                        href="https://twitter.com/MonafilsChess" 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        class="text-gray-400 hover:text-secondary transition-colors"
+                    >
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+                        </svg>
+                    </a>
+                    <a 
+                        href="https://instagram.com/MonafilsChess" 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        class="text-gray-400 hover:text-secondary transition-colors"
+                    >
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M16 4H8a4 4 0 00-4 4v8a4 4 0 004 4h8a4 4 0 004-4V8a4 4 0 00-4-4zm2 12a2 2 0 01-2 2H8a2 2 0 01-2-2V8a2 2 0 012-2h8a2 2 0 012 2v8z"/>
+                            <circle cx="12" cy="12" r="3"/>
+                            <circle cx="16.5" cy="7.5" r=".5"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="text-center space-y-2">
+                    <p class="text-sm text-gray-400">
+                        Contact us: <a href="tel:+26656666774" class="hover:text-secondary">+266 56 666 774</a> | 
+                        <a href="mailto:info@monafilschess.co.ls" class="hover:text-secondary">info@monafilschess.co.ls</a>
+                    </p>
+                    <p class="text-sm text-gray-400">
+                        Location: Maseru, Lesotho
+                    </p>
+                </div>
+
+                <!-- Copyright -->
+                <p class="text-sm text-gray-400">
+                    Copyright © 2024 Monafils Institute for Chess Excellence. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            mobileMenu.classList.toggle('open');
+        }
+    </script>
+</body>
+</html>

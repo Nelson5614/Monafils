@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Monafils Institute for Chess Excellence | Best Chess Academy in Lesotho</title>
+    <meta name="description" content="Join Lesotho's premier chess academy. Professional chess training at Monafils Institute for Chess Excellence. Learn chess from experienced instructors in Lesotho. Producing future grandmasters.">
+    <meta name="keywords" content="chess academy lesotho, learn chess lesotho, monafils institute, chess excellence, best chess training, chess lessons lesotho, chess grandmaster training">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Monafils Institute for Chess Excellence - Learn Chess in Lesotho">
+    <meta property="og:description" content="Join Lesotho's premier chess academy. Professional chess training at Monafils Institute for Chess Excellence.">
+    <meta property="og:image" content="/chess-academy-hero.jpg">
+    <meta property="og:url" content="https://yourwebsite.com">
+    <!-- Tailwind CSS -->
+    <link href="./dist/output.css" rel="stylesheet">
+
+    <style>
+        /* Custom styles for mobile menu */
+        .mobile-menu {
+            display: none;
+        }
+        .mobile-menu.open {
+            display: block;
+        }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+    <!-- Header -->
+    <header class="bg-white text-black py-4">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+            <!-- Logo -->
+            <div class="flex items-center space-x-2">
+                <img src="images/logo.png" alt="Monafils Institute Logo" class="w-20 h-20">
+                <span class="text-2xl font-bold text-primary">Monafils Institute</span>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex space-x-8">
+                <a href="index.html" class="text-sm hover:text-secondary transition-colors">Home</a>
+                <a href="about.html" class="text-sm hover:text-secondary transition-colors">About Us</a>
+                <a href="products.html" class="text-sm hover:text-secondary transition-colors">Products</a>
+                <a href="contact.html" class="text-sm hover:text-secondary transition-colors">Contact</a>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden text-black text-2xl" onclick="toggleMobileMenu()">
+                ☰
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="mobile-menu bg-white text-black md:hidden">
+            <nav class="flex flex-col space-y-4 p-4">
+                <a href="index.html" class="text-sm hover:text-secondary transition-colors">Home</a>
+                <a href="about.html" class="text-sm hover:text-secondary transition-colors">About Us</a>
+                <a href="products.html" class="text-sm hover:text-secondary transition-colors">Products</a>
+                <a href="contact.html" class="text-sm hover:text-secondary transition-colors">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="relative min-h-screen bg-black overflow-hidden">
+            <!-- Background Pattern -->
+            <div class="absolute inset-0 bg-grid-white/[0.02] bg-[size:60px_60px]"></div>
+            
+            <!-- Right Side Background Image with Overlay -->
+            <div class="absolute top-0 right-0 w-full lg:w-1/2 h-full">
+                <img
+                    src="https://images.unsplash.com/photo-1580541832626-2a7131ee809f?auto=format&fit=crop&q=80"
+                    alt="Chess master analyzing position"
+                    class="w-full h-full object-cover"
+                />
+                <!-- Gradient Overlays - Reduced opacity for better image visibility -->
+                <div class="absolute inset-0 bg-gradient-to-r from-black via-black/60 to-transparent"></div>
+                <div class="absolute inset-0 bg-gradient-to-b from-transparent via-black/30 to-black/70"></div>
+            </div>
+        
+            <!-- Main Content -->
+            <div class="relative container mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-20">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    <!-- Text Content -->
+                    <div class="space-y-8">
+                        <div class="space-y-4">
+                            <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold">
+                                <span class="text-white">Master the Game of</span>
+                                <span class="block text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
+                                    Kings & Queens
+                                </span>
+                            </h1>
+                            <p class="text-xl text-gray-400 max-w-xl">
+                                Join Lesotho's premier chess academy and train with FIDE-rated masters. 
+                                Transform your strategic thinking and become a champion.
+                            </p>
+                        </div>
+        
+                        <!-- CTA Buttons -->
+                        <div class="flex flex-wrap gap-4">
+                            <a   
+                                href="contact.html"
+                                class="px-8 py-4 px-4 bg-primary hover:bg-primary/90 text-white rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg shadow-primary/25"
+                            >
+                                Start Your Journey
+                            </a>
+                            
+                        </div>
+        
+                        <!-- Stats -->
+                        <div class="grid grid-cols-2 sm:grid-cols-3 gap-8 pt-8">
+                            <div>
+                                <h4 class="text-3xl font-bold text-white">30+</h4>
+                                <p class="text-gray-400">Students Trained</p>
+                            </div>
+                            
+                            <div>
+                                <h4 class="text-3xl font-bold text-white">98%</h4>
+                                <p class="text-gray-400">Success Rate</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Right side spacer to maintain layout -->
+                    <div class="hidden lg:block"></div>
+                </div>
+            </div>
+        
+            <!-- Decorative Bottom Wave -->
+            <div class="absolute bottom-0 left-0 right-0">
+                <svg class="w-full h-auto" viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path 
+                        d="M0 30L48 35C96 40 192 50 288 55C384 60 480 60 576 58.3C672 56.7 768 53.3 864 51.7C960 50 1056 50 1152 51.7C1248 53.3 1344 56.7 1392 58.3L1440 60V120H1392C1344 120 1248 120 1152 120C1056 120 960 120 864 120C768 120 672 120 576 120C480 120 384 120 288 120C192 120 96 120 48 120H0V30Z" 
+                        fill="white"
+                    />
+                </svg>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="py-24 bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                    <!-- Feature 1: Membership -->
+                    <div class="text-center space-y-4">
+                        <svg
+                            class="w-12 h-12 text-primary mx-auto"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        >
+                            <path d="M8 4v16" />
+                            <path d="M4 12h8" />
+                            <path d="M12 4v16" />
+                            <path d="M16 12h4" />
+                        </svg>
+                        <h3 class="text-xl font-bold text-primary">Become A Member</h3>
+                        <p class="text-gray-600 max-w-sm mx-auto">
+                            Join Lesotho's premier chess academy and gain access to expert instruction, 
+                            tournament preparation, and a community of dedicated chess players. 
+                            Perfect for beginners to advanced players seeking to master the game.
+                        </p>
+                    </div>
+
+                    <!-- Feature 2: Courseware -->
+                    <div class="text-center space-y-4">
+                        <svg
+                            class="w-12 h-12 text-secondary mx-auto"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        >
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                            <line x1="16" y1="2" x2="16" y2="6" />
+                            <line x1="8" y1="2" x2="8" y2="6" />
+                            <line x1="3" y1="10" x2="21" y2="10" />
+                        </svg>
+                        <h3 class="text-xl font-bold text-secondary">Professional Training</h3>
+                        <p class="text-gray-600 max-w-sm mx-auto">
+                            Access comprehensive chess training materials developed by experienced instructors. 
+                            Our structured curriculum covers openings, middlegame strategy, endgame techniques, 
+                            and tournament preparation for all skill levels.
+                        </p>
+                    </div>
+
+                    <!-- Feature 3: Online Classes -->
+                    <div class="text-center space-y-4">
+                        <svg
+                            class="w-12 h-12 text-primary mx-auto"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        >
+                            <rect x="5" y="2" width="14" height="20" rx="2" ry="2" />
+                            <circle cx="12" cy="18" r="2" />
+                        </svg>
+                        <h3 class="text-xl font-bold text-primary">Online & In-Person Classes</h3>
+                        <p class="text-gray-600 max-w-sm mx-auto">
+                            Learn chess through flexible training options at Monafils Institute. 
+                            Choose between interactive online sessions or traditional in-person classes 
+                            at our state-of-the-art facility in Lesotho.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-24 bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <div class="space-y-6">
+                        <h2 class="text-secondary text-xl">About Monafils Institute</h2>
+                        <h3 class="text-4xl font-bold text-primary">
+                            Developing Chess Champions in Lesotho
+                        </h3>
+                        <p class="text-gray-600">
+                            Founded in 2020, Monafils Institute for Chess Excellence has become Lesotho's 
+                            leading chess academy, dedicated to nurturing strategic thinking and competitive 
+                            excellence. Our experienced instructors, including FIDE-rated masters, have 
+                            trained numerous national champions and helped students achieve international 
+                            recognition.
+                        </p>
+                        <p class="text-gray-600">
+                            We pride ourselves on our comprehensive training approach, combining traditional 
+                            chess wisdom with modern analytical tools. Our students regularly participate 
+                            in national tournaments and international competitions, representing Lesotho 
+                            with distinction.
+                        </p>
+                        <button 
+                            class="bg-primary hover:bg-primary/90 text-white px-6 py-3 rounded-md transition-colors duration-300"
+                            onclick="window.location.href='/about'"
+                        >
+                            Discover Our Legacy
+                        </button>
+                    </div>
+                    <div class="flex justify-center">
+                        <img
+                            src="https://images.pexels.com/photos/5691871/pexels-photo-5691871.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="Chess champions training at Monafils Institute for Chess Excellence in Lesotho"
+                            class="w-full max-w-md h-auto rounded-lg shadow-xl"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="relative py-24 bg-black text-white">
+            <!-- Background Image -->
+            <div class="absolute inset-0">
+                <img
+                    src="https://images.unsplash.com/photo-1604948501466-4e9c339b9c24?auto=format&fit=crop&q=80"
+                    alt="Chess board"
+                    class="w-full h-full object-cover"
+                />
+                <!-- Gradient Overlay -->
+                <div class="absolute inset-0 bg-gradient-to-b from-black/70 to-black/90"></div>
+            </div>
+        
+            <div class="relative container mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+                <!-- Section Header -->
+                <div class="text-center space-y-4">
+                    <h2 class="text-secondary">Professional Chess Training Programs</h2>
+                    <h3 class="text-3xl font-bold">Comprehensive Chess Education at Monafils Institute</h3>
+                    <p class="text-gray-400 max-w-2xl mx-auto">
+                        Master the royal game with our structured learning paths, designed by FIDE-rated masters 
+                        and professional chess instructors in Lesotho.
+                    </p>
+                </div>
+        
+                <!-- Courses Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Beginners Course -->
+                    <div class="p-6 border border-gray-800 rounded-lg space-y-4 hover:border-primary transition-colors">
+                        <div class="text-primary">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/>
+                            </svg>
+                        </div>
+                        <h4 class="text-xl font-semibold">Chess for Beginners</h4>
+                        <p class="text-gray-400">
+                            Master the fundamentals of chess, piece movements, basic tactics, 
+                            and essential opening principles. Perfect for newcomers to the game.
+                        </p>
+                    </div>
+        
+                    <!-- Classic Strategies -->
+                    <div class="p-6 border border-gray-800 rounded-lg space-y-4 hover:border-primary transition-colors">
+                        <div class="text-secondary">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                            </svg>
+                        </div>
+                        <h4 class="text-xl font-semibold">Classical Chess Strategies</h4>
+                        <p class="text-gray-400">
+                            Study time-tested chess strategies, positional play, and tactical patterns 
+                            used by grandmasters throughout chess history.
+                        </p>
+                    </div>
+        
+                    <!-- Tournament Preparation -->
+                    <div class="p-6 border border-gray-800 rounded-lg space-y-4 hover:border-primary transition-colors">
+                        <div class="text-primary">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path d="M5 3v16M19 3v16M3 5h4M17 5h4M3 19h4M17 19h4M9 3h6"/>
+                            </svg>
+                        </div>
+                        <h4 class="text-xl font-semibold">Tournament Preparation</h4>
+                        <p class="text-gray-400">
+                            Advanced techniques, psychological preparation, and strategic planning 
+                            for competitive chess tournaments and championships.
+                        </p>
+                    </div>
+        
+                    <!-- Time Management -->
+                    <div class="p-6 border border-gray-800 rounded-lg space-y-4 hover:border-primary transition-colors">
+                        <div class="text-secondary">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M12 6v6l4 2"/>
+                            </svg>
+                        </div>
+                        <h4 class="text-xl font-semibold">Time Management Mastery</h4>
+                        <p class="text-gray-400">
+                            Learn critical time management skills, decision-making under pressure, 
+                            and clock handling techniques for competitive chess.
+                        </p>
+                    </div>
+        
+                    <!-- Strategic Thinking -->
+                    <div class="p-6 border border-gray-800 rounded-lg space-y-4 hover:border-primary transition-colors">
+                        <div class="text-primary">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path d="M21 12a9 9 0 1 1-9-9 9 9 0 0 1 9 9Z"/>
+                                <path d="M12 8v4M12 16h.01"/>
+                            </svg>
+                        </div>
+                        <h4 class="text-xl font-semibold">Strategic Analysis</h4>
+                        <p class="text-gray-400">
+                            Develop advanced position evaluation skills, opponent psychology understanding, 
+                            and strategic planning abilities.
+                        </p>
+                    </div>
+        
+                    <!-- Online Training -->
+                    <div class="p-6 border border-gray-800 rounded-lg space-y-4 hover:border-primary transition-colors">
+                        <div class="text-secondary">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                                <path d="M8 21h8M12 17v4"/>
+                            </svg>
+                        </div>
+                        <h4 class="text-xl font-semibold">Virtual Chess Academy</h4>
+                        <p class="text-gray-400">
+                            Interactive online training sessions with FIDE-rated instructors, 
+                            featuring analysis tools and personalized feedback.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-24 bg-gray-100">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <!-- Skills Progress Section -->
+                    <div class="space-y-8">
+                        <!-- Technique Progress -->
+                        <div class="space-y-2">
+                            <div class="flex justify-between items-center">
+                                <span class="text-lg font-medium text-primary">Professional Training</span>
+                                <span class="text-sm text-gray-600">97%</span>
+                            </div>
+                            <div class="h-2 bg-gray-200 rounded-full overflow-hidden">
+                                <div 
+                                    class="h-full bg-primary rounded-full transition-all duration-500" 
+                                    style="width: 97%"
+                                ></div>
+                            </div>
+                        </div>
+        
+                        <!-- Strategies Progress -->
+                        <div class="space-y-2">
+                            <div class="flex justify-between items-center">
+                                <span class="text-lg font-medium text-secondary">Tournament Success Rate</span>
+                                <span class="text-sm text-gray-600">96%</span>
+                            </div>
+                            <div class="h-2 bg-gray-200 rounded-full overflow-hidden">
+                                <div 
+                                    class="h-full bg-secondary rounded-full transition-all duration-500" 
+                                    style="width: 96%"
+                                ></div>
+                            </div>
+                        </div>
+        
+                        <!-- Experience Progress -->
+                        <div class="space-y-2">
+                            <div class="flex justify-between items-center">
+                                <span class="text-lg font-medium text-primary">Student Satisfaction</span>
+                                <span class="text-sm text-gray-600">95%</span>
+                            </div>
+                            <div class="h-2 bg-gray-200 rounded-full overflow-hidden">
+                                <div 
+                                    class="h-full bg-primary rounded-full transition-all duration-500" 
+                                    style="width: 95%"
+                                ></div>
+                            </div>
+                        </div>
+        
+                        <!-- Development Progress -->
+                        <div class="space-y-2">
+                            <div class="flex justify-between items-center">
+                                <span class="text-lg font-medium text-secondary">Rating Improvement</span>
+                                <span class="text-sm text-gray-600">87%</span>
+                            </div>
+                            <div class="h-2 bg-gray-200 rounded-full overflow-hidden">
+                                <div 
+                                    class="h-full bg-secondary rounded-full transition-all duration-500" 
+                                    style="width: 87%"
+                                ></div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Content Section -->
+                    <div class="space-y-6">
+                        <h2 class="text-secondary text-xl italic">Why Choose Monafils Institute?</h2>
+                        <h3 class="text-4xl font-bold text-primary">
+                            Lesotho's Leading Chess Academy
+                        </h3>
+                        <p class="text-gray-600">
+                            At Monafils Institute for Chess Excellence, we combine proven teaching methodologies 
+                            with modern training techniques. Our FIDE-rated instructors have helped numerous 
+                            students achieve national recognition and international success. With a track record 
+                            of producing champions and a commitment to excellence, we offer:
+                        </p>
+                        <ul class="text-gray-600 space-y-2">
+                            <li class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Comprehensive training from beginner to master level
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Regular tournament participation opportunities
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Personalized coaching and development plans
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                State-of-the-art training facilities and resources
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-24 bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+                <!-- Section Header -->
+                <div class="text-center space-y-4">
+                    <h2 class="text-secondary">Training Programs</h2>
+                    <h3 class="text-3xl font-bold text-primary">Choose Your Path to Chess Excellence</h3>
+                    <p class="text-gray-600 max-w-2xl mx-auto">
+                        Select from our comprehensive training programs, designed to develop your chess skills 
+                        at any level. Join Lesotho's premier chess academy today.
+                    </p>
+                </div>
+        
+                <!-- Pricing Cards -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Beginner Package -->
+                    <div class="rounded-lg border border-gray-200 shadow-sm overflow-hidden">
+                        <div class="p-6">
+                            <h4 class="text-2xl font-bold text-primary mb-4">Basic</h4>
+                            <div class="text-4xl font-bold mb-4">
+                                <span class="text-2xl">M</span>
+                                600
+                                <span class="text-lg font-normal text-gray-500">/Month</span>
+                            </div>
+                            <ul class="space-y-3 mb-6">
+                                <li class="flex items-center gap-2 text-gray-600">
+                                    <svg class="w-5 h-5 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    1 x 2 hr session per week
+                                </li>
+                                <li class="flex items-center gap-2 text-gray-600">
+                                    <svg class="w-5 h-5 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    House calls for physical sessions, zoom for online
+                                </li>
+                                <li class="flex items-center gap-2 text-gray-600">
+                                    <svg class="w-5 h-5 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    Open for students age 4 years and above
+                                </li>
+                                <li class="flex items-center gap-2 text-gray-600">
+                                    <svg class="w-5 h-5 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    Weekly assignments for practice
+                                </li>
+                                <li class="flex items-center gap-2 text-gray-600">
+                                    <svg class="w-5 h-5 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    Each session takes up to 5 students max
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="p-6 bg-gray-50">
+                            <a href="contact.html" class="w-full bg-primary hover:bg-primary/90 text-white py-3 px-3 rounded-md transition-colors">
+                                Start Your Journey
+                            </a>
+                        </div>
+                    </div>
+        
+                    <!-- Premium Package -->
+                    <div class="rounded-lg border-2 border-secondary shadow-lg overflow-hidden relative">
+                        <div class="absolute top-4 right-4">
+                            <span class="bg-secondary text-white px-3 py-1 rounded-full text-sm">Popular</span>
+                        </div>
+                        <div class="p-6">
+                            <h4 class="text-2xl font-bold text-secondary mb-4">Advanced</h4>
+                            <div class="text-4xl font-bold mb-4">
+                                <span class="text-2xl">M</span>
+                                1 000
+                                <span class="text-lg font-normal text-gray-500">/Month</span>
+                            </div>
+                            <ul class="space-y-3 mb-6">
+                                <li class="flex items-center gap-2 text-gray-600">
+                                    <svg class="w-5 h-5 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    2 x 2 hr session per week
+                                </li>
+                                <li class="flex items-center gap-2 text-gray-600">
+                                    <svg class="w-5 h-5 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    House calls for physical sessions, zoom for online
+                                </li>
+                                <li class="flex items-center gap-2 text-gray-600">
+                                    <svg class="w-5 h-5 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    Open for students age 4 years and above
+                                </li>
+                                <li class="flex items-center gap-2 text-gray-600">
+                                    <svg class="w-5 h-5 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    Weekly assignments for practice
+                                </li>
+                                <li class="flex items-center gap-2 text-gray-600">
+                                    <svg class="w-5 h-5 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    Each session can take up to 5 students max
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="p-6 bg-gray-50">
+                            <a href="contact.html" class="w-full bg-secondary hover:bg-secondary/90 text-white py-3 px-3 rounded-md transition-colors">
+                                Start Your Journey
+                            </a>
+                        </div>
+                    </div>
+        
+                    
+                </div>
+            </div>
+        </section>
+
+        <section class="py-24 bg-black text-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-8">
+                <div class="w-full md:w-1/3">
+                    <img
+                        src="https://images.pexels.com/photos/16093858/pexels-photo-16093858/free-photo-of-close-up-of-chess-pieces.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="Professional chess player contemplating their next move at Monafils Institute"
+                        class="w-full h-auto rounded-lg shadow-2xl"
+                    />
+                </div>
+                <div class="w-full md:w-1/2 space-y-6">
+                    <h2 class="text-4xl font-bold leading-tight">
+                        Begin Your Journey to 
+                        <span class="text-secondary">Chess Mastery</span> 
+                        in Lesotho!
+                    </h2>
+                    <p class="text-gray-400 text-lg">
+                        Join Lesotho's premier chess academy and train with FIDE-rated masters. 
+                        Our structured programs, professional coaching, and competitive environment 
+                        will help you achieve your chess goals.
+                    </p>
+                    <div class="space-y-4">
+                        <button 
+                            onclick="window.location.href='contact.html'"
+                            class="bg-secondary hover:bg-secondary/90 text-white px-8 py-4 rounded-md font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg"
+                        >
+                            Start Your Chess Journey Today
+                        </button>
+                        <p class="text-gray-500 text-sm">
+                            Limited spots available for our next training cohort
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="bg-black text-white py-12 border-t border-gray-800">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col items-center space-y-8">
+                    <!-- Logo -->
+                    <div class="flex items-center gap-2">
+                        <span class="text-2xl font-bold text-primary">Monafils Institute</span>
+                        <svg class="w-6 h-6 text-secondary" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M19 5L5 19M5 5l14 14" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="12" cy="12" r="10" stroke-width="2"/>
+                        </svg>
+                    </div>
+        
+                    <!-- Navigation Links -->
+                    <nav class="flex flex-wrap justify-center gap-8">
+                        <a href="about" class="text-sm hover:text-secondary transition-colors">
+                            About Us
+                        </a>
+                        <a href="contact" class="text-sm hover:text-secondary transition-colors">
+                            Contact
+                        </a>
+                        <a href="#" class="text-sm hover:text-secondary transition-colors">
+                            Privacy Policy
+                        </a>
+                        <a href="#" class="text-sm hover:text-secondary transition-colors">
+                            Terms & Conditions
+                        </a>
+                        <a href="#" class="text-sm hover:text-secondary transition-colors">
+                            Training Programs
+                        </a>
+                    </nav>
+        
+                    <!-- Social Media Links -->
+                    <div class="flex space-x-6">
+                        <a 
+                            href="https://facebook.com/MonafilsChess" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            class="text-gray-400 hover:text-secondary transition-colors"
+                        >
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
+                            </svg>
+                        </a>
+                        <a 
+                            href="https://twitter.com/MonafilsChess" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            class="text-gray-400 hover:text-secondary transition-colors"
+                        >
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+                            </svg>
+                        </a>
+                        <a 
+                            href="https://instagram.com/MonafilsChess" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            class="text-gray-400 hover:text-secondary transition-colors"
+                        >
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M16 4H8a4 4 0 00-4 4v8a4 4 0 004 4h8a4 4 0 004-4V8a4 4 0 00-4-4zm2 12a2 2 0 01-2 2H8a2 2 0 01-2-2V8a2 2 0 012-2h8a2 2 0 012 2v8z"/>
+                                <circle cx="12" cy="12" r="3"/>
+                                <circle cx="16.5" cy="7.5" r=".5"/>
+                            </svg>
+                        </a>
+                    </div>
+        
+                    <!-- Contact Information -->
+                    <div class="text-center space-y-2">
+                        <p class="text-sm text-gray-400">
+                            Contact us: <a href="tel:+26656666774" class="hover:text-secondary">+266 56 666 774</a> | 
+                            <a href="mailto:info@monafilschess.co.ls" class="hover:text-secondary">info@monafilschess.co.ls</a>
+                        </p>
+                        <p class="text-sm text-gray-400">
+                            Location: Maseru, Lesotho
+                        </p>
+                    </div>
+        
+                    <!-- Copyright -->
+                    <p class="text-sm text-gray-400">
+                        Copyright © 2024 Monafils Institute for Chess Excellence. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+        
+    </main>
+
+    <script>
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            mobileMenu.classList.toggle('open');
+        }
+    </script>
+</body>
+</html>
